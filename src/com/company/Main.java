@@ -23,13 +23,17 @@ public class Main extends Application {
         grid.setVgap(10);
 
         grid.add(new Label("Monthly Investment:"), 0, 0);
-        grid.add(new Label("Monthly Return:"), 0, 1);
+        grid.add(new Label("Interest Rate:"), 0, 1);
+        grid.add(new Label("Monthly Return:"), 0, 2);
 
         TextField monthField = new TextField();
         grid.add(monthField, 1, 0);
 
+        TextField interestField = new TextField();
+        grid.add(interestField, 1, 1);
+
         TextField returnField = new TextField();
-        grid.add(returnField, 1, 1);
+        grid.add(returnField, 1, 2);
 
         primaryStage.setScene(scene);
         primaryStage.show();
