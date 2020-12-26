@@ -25,6 +25,7 @@ public class Main extends Application {
         grid.add(new Label("Monthly Investment:"), 0, 0);
         grid.add(new Label("Interest Rate:"), 0, 1);
         grid.add(new Label("Monthly Return:"), 0, 2);
+        grid.add(new Label("Investment Time:"), 0, 3);
 
         TextField monthField = new TextField();
         grid.add(monthField, 1, 0);
@@ -34,6 +35,9 @@ public class Main extends Application {
 
         TextField returnField = new TextField();
         grid.add(returnField, 1, 2);
+        
+        TextField timeField = new TextField();
+        grid.add(timeField, 1, 3);
 
         primaryStage.setScene(scene);
         primaryStage.show();
